@@ -1,0 +1,13 @@
+select = int(input("1. 입력한 수식 계산, 2. 두 수 사이의 합)
+
+if select == 1
+                   num = input(" 수식을 입력하세요 : ")
+                   answer = eval(num)
+                   print (" %s 결과는 %5.1f 입니다. "(num,answer))
+elif select == 2
+    num1 = int(input("첫 숫자를 입력하세요")
+    num2 = int(input("두번쨰 숫자를 입력하세요")
+    answer=(num1+num2)/2*(num2-num1)
+    print(num1"+...+"num2는 answer,"입니다")
+else:
+    print("1이나 2만 입력하세요")
