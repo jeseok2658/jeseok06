@@ -1,0 +1,39 @@
+from tkinter import *
+from tkinter import messagebox
+
+fnameList=[
+    "/Users/yujeseog/Downloads/Kane.gif",
+    "/Users/yujeseog/Downloads/Ronaldo.gif",
+    "/Users/yujeseog/Downloads/Messi.gif",
+    "/Users/yujeseog/Downloads/Dybala.gif",
+    "/Users/yujeseog/Downloads/Mbappé.gif",
+    "/Users/yujeseog/Downloads/Lamine-Yamal.gif",
+    "/Users/yujeseog/Downloads/Salah_1.gif",
+    "/Users/yujeseog/Downloads/Dembélé.gif",
+    "/Users/yujeseog/Downloads/MartÍnez.gif"
+]
+num=0
+
+def updateLabel():
+    filename = fnameList[num].split("/")[-1]
+    fileLabel.configure(text=filename)
+
+def clickNext():
+    global num
+    num += 1
+    if num > 8:
+        num = 0
+    photo = PhotoImage(file=fnameList[num])
+    pLabel.configure(image=photo)
+    pLabel.image = photo
+    updateLabel()  
+
+def clickPrev():
+    global num
+    num -= 1
+    if num < 0:
+        num = 8
+    photo = PhotoImage(file=fnameList[num])
+    pLabel.configure(image=photo)
+    pLabel.image = photo
+    updateLabel() 
