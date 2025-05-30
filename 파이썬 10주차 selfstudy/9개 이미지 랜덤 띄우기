@@ -3,15 +3,15 @@ from tkinter import *
 
 btnList=[None]*9
 fnameList=[
-    "/Users/yujeseog/Downloads/짐승거인.gif",
-    "/Users/yujeseog/Downloads/차력거인.gif",
-    "/Users/yujeseog/Downloads/시조거인.gif",
-    "/Users/yujeseog/Downloads/갑옷거인.gif",
-    "/Users/yujeseog/Downloads/진격의거인.gif",
-    "/Users/yujeseog/Downloads/초대형거인.gif",
-    "/Users/yujeseog/Downloads/여성형거인.gif",
-    "/Users/yujeseog/Downloads/턱거인.gif",
-    "/Users/yujeseog/Downloads/전퇴의거인_1.gif"
+    "짐승거인.gif",
+    "차력거인.gif",
+    "시조거인.gif",
+    "갑옷거인.gif",
+    "진격의거인.gif",
+    "초대형거인.gif",
+    "여성형거인.gif",
+    "턱거인.gif",
+    "전퇴의거인_1.gif"
 ]
 
 random.shuffle(fnameList)
