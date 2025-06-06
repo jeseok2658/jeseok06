@@ -3,7 +3,7 @@ from tkinter import *
 window = Tk()
 window.title("첼시탈출하기")
 
-photo = PhotoImage(file="/Users/yujeseog/Downloads/uGR-naglw3v_dJadrPT-tjZNWnJk291j9YM8HRY9Gy2-KOu4d0lN6D-8eNd59Q4UvTXBTWERaWj0PlBab20cg1r11OXt7QPs89X6.gif")
+photo = PhotoImage(file="루카쿠.gif")
 
 label = Label(window, image=photo)
 button = Button(window, text="언해피", fg="blue", command=quit, width=30, height=3)
