@@ -1,0 +1,14 @@
+from tkinter import *
+from tkinter import messagebox
+
+def myFunc():
+  messagebox.showinfo("나는 첼시에서 행복하지 않다.","우웅.. 까꿍이는 인테르로 돌아가고 싶오")
+
+window=Tk()
+
+photo=PhogoImage(file="루카쿠.gif")
+button1=Button(window,image=photo,command=myFunc)
+
+button1.pack()
+
+window.mainloop()
