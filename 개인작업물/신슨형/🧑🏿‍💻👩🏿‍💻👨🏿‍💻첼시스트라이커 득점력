@@ -1,30 +1,33 @@
 class Striker:
-  color=""
-  scoring=0
+    name=""
+    color=""
+    score=0
+    bigchancemiss=0
 
-  def score(self,value):
-    self.scoring+=value
+    def __init__ (self,name,color,score,assist):
+        self.name=name
+        self.color=color
+        self.score=score
+        self.assist=assist
 
-  def bigchancmiss(self,value):
-    self.bigchancemiss-=value
+    def getName(self):
+        return self.name
 
-Nikolas_Jackson=Striker()
-Nikolas_Jackson.color="흑인"
-Nikolas_Jackson.scoring=0
+    def getColor(self):
+        return self.color
 
-Romelu_Lukaku=Striker()
-Romelu_Lukaku.color="흑인"
-Romelu_Lukaku.scoring=0
+    def getScore(self):
+        return self.score
 
-Victor_Osimhen=Striker()
-Victor_Osimhen.color="흑인"
-Victor_Osimhen.scoring=0
+    def getAssist(self):
+        return self.assist
 
-Nikolas_Jackson.score(13)
-print("신슨형의 색상은 %s이며, 현재 득점은 %d골 입니다."%(Nikolas_Jackson.color,Nikolas_Jackson.scoring))
+Jackson,Lukaku,Osimhen=None,None,None
 
-Romelu_Lukaku.score(14)
-print("언해피창놈의 색상은 %s이며, 현재 득점은 %d골 입니다.%(Romelu_Lukaku.color,Romelu_Lukaku.scoring))
+Jackson=Striker("N.Jackson","흑인",13,5)
+Lukaku=Striker("R.Lukaku","흑인",14,11)
+Osimhen=Striker("V.Osimhen","흑인",37,7)
 
-Victor_Osimhen.score(37)
-print("돈벌레유리몸의 색상은 %s이며, 현재 득점은 %d골 입니다.%(Victor_Osimhen.color,Victor_Osimhen.scoring))
+print("%s의 색상은 %s이고 득점은 %d골, 도움은 %d개 입니다."%(Jackson.getName(),Jackson.getColor(),Jackson.getScore(),Jackson.getAssist()))
+print("%s의 색상은 %s이고 득점은 %d골, 도움은 %d개 입니다."%(Lukaku.getName(),Lukaku.getColor(),Lukaku.getScore(),Lukaku.getAssist()))
+print("%s의 색상은 %s이고 득점은 %d골, 도움은 %d개 입니다."%(Osimehn.getName(),Osimhen.getColor(),Osimhen.getScore(),Osimhen.getAssist()))
