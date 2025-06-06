@@ -1,0 +1,18 @@
+from tkinter import *
+from tkinter.simpledialog import *
+
+window=Tk()
+window.title("역시 닥주전은 신슨형")
+
+label1=Label(window,text="신슨형이 세이브한만큼")
+label1.pack()
+
+value=askinteger("잭슨 사용법 간파","신슨형이 세이브한만큼",minvalue=1,maxvalue=200000000000)
+
+photo=PhotoImage(file="신슨형이2000억을세이브하네.gif")
+label3=Label(window,image=photo)
+label2=Label(window,text=f"드디어 신슨형이 {value}를 세이브하네~")
+label3.pack()
+label2.pack()
+
+window.mainloop()
