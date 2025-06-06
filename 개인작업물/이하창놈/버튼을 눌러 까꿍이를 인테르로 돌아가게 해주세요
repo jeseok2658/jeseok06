@@ -1,0 +1,27 @@
+from tkinter import *
+
+window = Tk()
+window.title("까꿍이 인테르 이적 버튼")
+
+def myFunc():
+    if chk.get() == 1:
+        label.config(image=photo2)
+    else:
+        label.config(image=photo1)
+
+photo1 = PhotoImage(file="첼카쿠.gif")
+photo2 = PhotoImage(file="인카쿠.gif")
+
+chk = IntVar()
+
+cb1 = Checkbutton(window,
+    text="까꿍이는 인테르로 돌아가고 싶어해요. 버튼을 눌러 까꿍이를 첼시 감옥에서 탈출시켜주세요ㅜㅜ",
+    variable=chk,
+    command=myFunc
+)
+cb1.pack()
+
+label = Label(window, image=photo1)
+label.pack()
+
+window.mainloop()
