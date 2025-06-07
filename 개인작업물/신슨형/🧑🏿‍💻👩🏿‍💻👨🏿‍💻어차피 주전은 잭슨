@@ -1,0 +1,14 @@
+outFp=None
+outStr=""
+
+outFp=open("어주잭.txt","w")
+
+while True:
+  outStr=input("첼시의 원톱은?")
+  if outStr 1="":
+    outFp.writelines(outStr+"\n")
+  else:
+    break
+
+outFp.close()
+print("공격수를 영입해도 첼시의 최전방은 9년계약 종신확정 신슨형이 책임지니 걱정 말라구~")
