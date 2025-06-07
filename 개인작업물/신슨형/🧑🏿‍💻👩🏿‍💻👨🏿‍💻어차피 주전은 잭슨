@@ -5,7 +5,7 @@ outFp=open("어주잭.txt","w")
 
 while True:
   outStr=input("첼시의 원톱은?")
-  if outStr 1="":
+  if outStr !="":
     outFp.writelines(outStr+"\n")
   else:
     break
