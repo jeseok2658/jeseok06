@@ -1,0 +1,15 @@
+inFp=None
+inStr=""
+
+inFp=open("파이썬 농가.txt","r")
+
+inStr=inFp.readline()
+print(inStr,end="")
+
+inStr=inFp.readline()
+print(inStr,end="")
+
+inStr=inFp.readline()
+print(inStr,end="")
+
+inFp.close()
