@@ -1,0 +1,44 @@
+class OnePiece:
+    def __init__ (self,name,crew,bounty,fruit):
+        self.name=name
+        self.crew.crew
+        self.bounty=bounty
+        self.fruit=fruit
+
+    def introduce(self):
+        print(f"나는 {self.crew}소속의 {self.fruit} {self.name}이다! 내 현상금은 무려 {self.bounty}베리나 된다고!!")
+
+
+루피=OnePiece("몽키 D.루피","밀짚모자 해적단 ","30억 베리","고무고무열매를 먹은")
+조로=OnePiece("롤로노아 조로","밀짚모자 해적단 ","11억 1000만 베리","무능력자")
+상디=OnePiece("상디","밀짚모자 해적단","10억 3200만 베리 ","무능력자")
+도황=OnePiece("돈키호테 도플라밍고","돈키호테 패밀리 ","3억 4000만 베리","실실열매를 먹은")
+아카이누=OnePiece("아카이누","해군본부 ","50억 베리","마그마그열매를 먹은")
+키자루=OnePiece("키자루","해군본부 ","30억 베리","번쩍번쩍열매를 먹은")
+샹크스=OnePiece("샹크스","빨간머리 해적단 ","40억 4890만 베리","무능력자")
+미호크=OnePiece("쥬라큘 미호크","크로스길드 ","35억 9000만 베리","무능력자")
+검은수염=OnePiece("마샬 D.티치","검은수염 해적단 ","39억 9600만 베리","어둠어둠 열매를 먹은")
+로우=OnePiece("트라팔가 로","하트 해적단 ","30억 베리","수술수술 열매를 먹은")
+키드=OnePiece("유스타스 키드","키드 해적단 ","30억 베리","자기자기 열매를 먹은")
+거프=OnePiece("몽키 D.거프","해군본부 ","30억 베리","무능력자")
+로저=OnePiece("골 D.로저","로저 해적단 ","55억 6480만 베리","무능력자")
+흰수염=OnePiece("에드워드 뉴게이트","흰수염 해적단 ","50억 4600만 베리","흔들흔들 열매를 먹은")
+카이도=OnePiece("카이도","백수 해적단 ","46억 1110만 베리","동물계 환수종 물고기물고기 열매 모델 청룡을 먹은")
+빅맘=OnePiece("샬롯 링링","빅맘 해적단 ","43억 8800만 베리","소울소울 열매를 먹은")
+
+루피.introduce()
+조로.introduce()
+상디.introduce()
+도황.introduce()
+아카이누.introduce()
+키자루.introduce()
+샹크스.introduce()
+미호크.introduce()
+검은수염.introduce()
+로우.introduce()
+키드.introduce()
+거프.introduce()
+로저.introduce()
+흰수염.introduce()
+카이도.introduce()
+빅맘.introduce()
