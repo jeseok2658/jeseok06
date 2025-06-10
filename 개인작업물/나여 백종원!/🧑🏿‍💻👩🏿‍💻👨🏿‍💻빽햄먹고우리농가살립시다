@@ -1,0 +1,15 @@
+inFp=None
+inStr=''
+
+inFp=open('농가살리기.txt')
+
+inStr=inFp.readline()
+print(inStr,end='')
+
+inStr=inFp.readline()
+print(inStr,end='')
+
+inStr=inFp.readline()
+print(inStr,end='')
+
+inFp.close()
