@@ -1,0 +1,12 @@
+inFp=None
+inStr=''
+
+inFp=open('파이썬농가.txt','r')
+
+while True:
+  inStr=inFp.readline()
+  if inStr=='':
+    break
+  print(inStr,end='')
+
+inFp.close
