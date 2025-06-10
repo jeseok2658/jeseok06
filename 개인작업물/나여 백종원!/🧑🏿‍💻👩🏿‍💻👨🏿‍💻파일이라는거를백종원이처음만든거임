@@ -1,0 +1,17 @@
+import os
+
+inFp=None
+fName,inList,inStr='',[],''
+
+fName=input('파일이라는걸 만든게 바로 나 백종원이유! 그니까 빨리 파일명 입력해유~ :')
+
+if os.path.exists(fName):
+  inFp=open(fName,'r')
+
+  inList=inFp.readlines()
+  for inStr in inList:
+    print(inStr,end='')
+
+  inFp.close()
+else:
+  print(f"{fName}같은 파일 따위는 없는데 뭐라는거유 장사가 장난으로 보여유?????")
