@@ -1,0 +1,24 @@
+class Ronaldo:
+        def __init__(self,BallonDor,UCL,Goal,Assist):
+            self.b=BallonDor
+            self.u=UCL
+            self.g=Goal
+            self.a=Assist
+       
+        
+        def getBallonDor(self):
+            return self.b
+
+        def getUCL(self):
+            return self.u
+
+        def getGoal(self):
+            return self.g
+
+        def getAssist(self):
+            return self.a
+
+
+호날두=Ronaldo("5회","5회","938","257")
+
+print(f"신두형은 {호날두.getBallonDor()}의 발롱도르를 수상했으며 {호날두.getUCL()}의 챔피언스리그 우승을 이끌었고 통산{호날두.getGoal()}골과 {호날두.getAssist()}어시스트를 기록한 축구 역사상 GOAT입니다.")
